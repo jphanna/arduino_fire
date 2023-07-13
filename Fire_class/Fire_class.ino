@@ -29,7 +29,7 @@ class Fire {
     Fire(int pin, String fireType) {
       ledPin = pin;
       fireType = fireType;
-      // pinMode(pin, OUTPUT); Arduino Docs say this is not needed
+      pinMode(pin, OUTPUT);
       flickerSpeed = getFlickerSpeed();
       currentMillis = 0;
       previousMillis = 0;
